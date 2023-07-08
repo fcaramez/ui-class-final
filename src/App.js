@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 import UsersList from "./pages/UsersList";
+import UserDetails from "./pages/UserDetails";
 
 function App() {
   return (
@@ -12,6 +13,10 @@ function App() {
       <Route
         path="/users"
         element={<UsersList />}
+      />
+      <Route
+        path="/users/:id"
+        element={<UserDetails />}
       />
     </Routes>
   );
